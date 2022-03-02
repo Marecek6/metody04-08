@@ -16,5 +16,13 @@ namespace metody04_08
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            int a = int.Parse(textBox1.Text);
+            int b = int.Parse(textBox2.Text);
+            double Mocnina = CelaCisla.mocnina(a, b);
+            MessageBox.Show("mocnina techto dvou cisel je " + Mocnina);
+        }
     }
 }
