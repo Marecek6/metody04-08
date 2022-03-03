@@ -51,5 +51,12 @@ namespace metody04_08
                 MessageBox.Show("neni prvocislo");
             }
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            int a = int.Parse(textBox1.Text);
+            int pocet = CelaCisla.pocetDelitelu(a);
+            MessageBox.Show("pocet delitelu je " + pocet);
+        }
     }
 }
