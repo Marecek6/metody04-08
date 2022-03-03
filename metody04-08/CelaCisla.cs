@@ -59,5 +59,17 @@ namespace metody04_08
             }
             return soucet;
         }
+
+        public static bool prvocislo(int a)
+        {
+            bool prvocislo = a != 1;
+            for (int delitel = 2; delitel <= Math.Sqrt(a) && prvocislo; ++delitel)
+            {
+                if (a % delitel == 0) prvocislo = false;
+            }
+            return prvocislo;
+        }
+
+        
     }
 }

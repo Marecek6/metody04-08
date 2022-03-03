@@ -38,5 +38,18 @@ namespace metody04_08
             int soucet = CelaCisla.cifsouc(a);
             MessageBox.Show("ciferny soucet lich " + soucet);
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            int a = int.Parse(textBox1.Text);
+            if (CelaCisla.prvocislo(a))
+            {
+                MessageBox.Show("je prvocislo");
+            }
+            else
+            {
+                MessageBox.Show("neni prvocislo");
+            }
+        }
     }
 }
