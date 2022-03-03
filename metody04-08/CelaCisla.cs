@@ -70,7 +70,7 @@ namespace metody04_08
             return prvocislo;
         }
 
-        public static int pocetDelitelu(int a)
+        public int pocetDelitelu(int a)
         {
             int pocet = 0;
             int i = 1;
