@@ -24,5 +24,12 @@ namespace metody04_08
             double Mocnina = CelaCisla.mocnina(a, b);
             MessageBox.Show("mocnina techto dvou cisel je " + Mocnina);
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            int a = int.Parse(textBox1.Text);
+            int Faktorial = CelaCisla.faktorial(a);
+            MessageBox.Show("faktorial a " + Faktorial);
+        }
     }
 }

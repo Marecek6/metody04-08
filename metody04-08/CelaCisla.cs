@@ -32,5 +32,17 @@ namespace metody04_08
             }
             return vysledek;
         }
+
+        public static int faktorial(int a)
+        {
+            int i = 1, vysledek = 1;
+            if (a >= 13) throw new ArgumentException("faktorial se nevejde do int");
+            while (i <= a)
+            {
+                vysledek *= i;
+                i++;
+            }
+            return vysledek;
+        }
     }
 }
